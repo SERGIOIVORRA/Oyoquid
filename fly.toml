@@ -1,9 +1,9 @@
-# fly.toml app configuration file generated for oyoquid-x4d4bq on 2025-07-08T08:03:30Z
+# fly.toml app configuration file generated for oyoquid-swejyg on 2025-07-08T09:32:31Z
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = 'oyoquid-x4d4bq'
+app = 'oyoquid-swejyg'
 primary_region = 'cdg'
 
 [build]
