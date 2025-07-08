@@ -1,9 +1,9 @@
-# fly.toml app configuration file generated for oyoquid-swejyg on 2025-07-08T09:32:31Z
+# fly.toml app configuration file generated for oyoquid-qtdpag on 2025-07-08T12:21:58Z
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = 'oyoquid-swejyg'
+app = 'oyoquid-qtdpag'
 primary_region = 'cdg'
 
 [build]
