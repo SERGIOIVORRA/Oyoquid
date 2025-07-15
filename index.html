@@ -5,16 +5,8 @@
   <title>Privacy Policy – Oyoquid</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    html, body {
-      height: 100%;
-    }
-
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body { height: 100%; }
     #background-slider {
       position: fixed;
       top: 0;
@@ -28,7 +20,6 @@
       z-index: -1;
       transition: background-image 1s ease-in-out;
     }
-
     body {
       font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
       line-height: 1.6;
@@ -36,7 +27,6 @@
       padding: 1rem;
       position: relative;
     }
-
     .animated-box {
       width: 60px;
       height: 60px;
@@ -45,12 +35,7 @@
       animation: resizeBox 2s infinite alternate ease-in-out;
       border-radius: 10px;
     }
-
-    @keyframes resizeBox {
-      0% { transform: scale(1); }
-      100% { transform: scale(1.8); }
-    }
-
+    @keyframes resizeBox { 0% { transform: scale(1); } 100% { transform: scale(1.8); } }
     main {
       max-width: 800px;
       margin: 0 auto;
@@ -61,344 +46,158 @@
       position: relative;
       z-index: 2;
     }
-
-    header {
-      text-align: center;
-      margin-bottom: 1rem;
-    }
-
-    header h1 {
-      font-size: 2.25rem;
-      margin-bottom: 0.25rem;
-      color: white;
-    }
-
-    .effective-date {
-      font-size: 0.9rem;
-      color: white;
-    }
-
-    section + section {
-      margin-top: 1.75rem;
-    }
-
-    h2 {
-      font-size: 1.5rem;
-      margin-bottom: 0.75rem;
-      color: #222;
-    }
-
-    ul {
-      list-style-type: disc;
-      margin-left: 1.5rem;
-      margin-top: 0.5rem;
-    }
-
-    strong {
-      font-weight: 600;
-    }
-
-    footer {
-      text-align: center;
-      font-size: 0.85rem;
-      margin-top: 2rem;
-      color: #555;
-      position: relative;
-      z-index: 2;
-    }
-
-    footer a {
-      color: inherit;
-      text-decoration: underline;
-    }
-
-    #ver-mas-en, #ver-mas-es {
-      display: none;
-    }
-
-    .ver-mas-btn {
-      display: block;
-      margin: 2rem auto 0;
-      padding: 0.75rem 1.5rem;
-      font-size: 1rem;
-      background-color: #00989A;
-      color: white;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
-
-    .ver-mas-btn:hover {
-      background-color: #007f80;
-    }
-
-    .whatsapp-button {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background-color: #25D366;
-      color: white;
-      padding: 12px 16px;
-      border-radius: 50px;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 15px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-      z-index: 999;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-
-    .whatsapp-button svg {
-      width: 20px;
-      height: 20px;
-      fill: white;
-    }
-
-    .lang-buttons {
-      text-align: center;
-      margin-bottom: 1.5rem;
-      position: relative;
-      z-index: 2;
-    }
-
-    .lang-buttons button {
-      margin: 0 10px;
-      padding: 0.5rem 1rem;
-      font-size: 1rem;
-      border: 1px solid #00989A;
-      background-color: white;
-      color: #00989A;
-      border-radius: 6px;
-      cursor: pointer;
-    }
-
-    .lang-buttons button:hover {
-      background-color: #00989A;
-      color: white;
-    }
-
-    .active-lang {
-      background-color: #00989A !important;
-      color: white !important;
-    }
+    header { text-align: center; margin-bottom: 1rem; }
+    header h1 { font-size: 2.25rem; margin-bottom: 0.25rem; color: white; }
+    .effective-date { font-size: 0.9rem; color: white; }
+    section + section { margin-top: 1.75rem; }
+    h2 { font-size: 1.5rem; margin-bottom: 0.75rem; color: #222; }
+    ul { list-style-type: disc; margin-left: 1.5rem; margin-top: 0.5rem; }
+    strong { font-weight: 600; }
+    footer { text-align: center; font-size: 0.85rem; margin-top: 2rem; color: #555; position: relative; z-index: 2; }
+    footer a { color: inherit; text-decoration: underline; }
+    .ver-mas-btn { display: block; margin: 2rem auto 0; padding: 0.75rem 1.5rem; font-size: 1rem; background-color: #00989A; color: white; border: none; border-radius: 6px; cursor: pointer; transition: background-color 0.3s; }
+    .ver-mas-btn:hover { background-color: #007f80; }
+    .whatsapp-button { position: fixed; bottom: 20px; right: 20px; background-color: #25D366; color: white; padding: 12px 16px; border-radius: 50px; text-decoration: none; font-weight: bold; font-size: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); z-index: 999; display: flex; align-items: center; gap: 8px; }
+    .whatsapp-button svg { width: 20px; height: 20px; fill: white; }
+    .lang-buttons { text-align: center; margin-bottom: 1.5rem; position: relative; z-index: 2; }
+    .lang-buttons button { margin: 0 10px; padding: 0.5rem 1rem; font-size: 1rem; border: 1px solid #00989A; background-color: white; color: #00989A; border-radius: 6px; cursor: pointer; }
+    .lang-buttons button:hover { background-color: #00989A; color: white; }
+    .active-lang { background-color: #00989A !important; color: white !important; }
   </style>
 </head>
 <body>
-
   <div id="background-slider"></div>
-
   <div class="animated-box"></div>
   <br>
-
   <div class="lang-buttons">
     <button id="btn-lang-en" onclick="showLanguage('en')" class="active-lang">Read in English</button>
     <button id="btn-lang-es" onclick="showLanguage('es')">Leer en Español</button>
   </div>
-
   <header>
     <h1>Privacy Policy</h1>
-    <p class="effective-date">Effective Date: July&nbsp;1,&nbsp;2025</p>
+    <p class="effective-date">Effective Date: July 1, 2025</p>
   </header>
-
   <main>
-
-       <!-- Setup Instructions Section -->
-<section style="margin-top: 2rem;">
-  <h2 style="color:#222;">🧩 App Block Setup Instructions / Instrucciones de instalación de bloques</h2>
-  <div style="margin-top:1rem;">
-    <h3 style="color:#00989A;">English</h3>
-    <ol>
-      <li>Go to your <strong>Theme</strong> in the Shopify admin.</li>
-      <li>Click on <strong>“Add section”</strong> or <strong>“Add block”</strong>.</li>
-      <li>In the <strong>Apps</strong> tab, look for blocks from <strong>“Oyoquid MoveResize-Experience”</strong>.</li>
-      <li>Add the desired block (e.g. <code>bloque-9 botón</code>, <code>bloque-7 slider3D</code>, etc.).</li>
-      <li>Once positioned, <strong>copy the X and Y coordinates</strong> and paste them in the app's editable field to keep it in place.</li>
-    </ol>
-    <p><strong>Need help?</strong> See the example below:</p>
-    <img src="tom.JPG" alt="App block instructions" style="width:100%; max-width:600px; border-radius:8px; margin-top:1rem;">
-  </div>
-  <div style="margin-top:2rem;">
-    <h3 style="color:#00989A;">Español</h3>
-    <ol>
-      <li>Ve a tu <strong>Tema</strong> desde el panel de Shopify.</li>
-      <li>Haz clic en <strong>“Agregar sección”</strong> o <strong>“Agregar bloque”</strong>.</li>
-      <li>En la pestaña <strong>Aplicaciones</strong>, busca los bloques de <strong>“Oyoquid MoveResize-Experience”</strong>.</li>
-      <li>Añade el bloque que necesites (por ejemplo: <code>bloque-9 botón</code>, <code>bloque-7 slider3D</code>, etc.).</li>
-      <li>Una vez colocado, <strong>copia las coordenadas X e Y</strong> y pégalas en el campo editable de la app para que se mantenga en esa posición.</li>
-    </ol>
-    <p><strong>¿Necesitas ayuda?</strong> Mira el ejemplo debajo:</p>
-    <img src="tom.JPG" alt="Instrucciones visuales" style="width:100%; max-width:600px; border-radius:8px; margin-top:1rem;">
-  </div>
-</section>
-
-
-    <!-- English -->
+    <section id="instructions-en" style="margin-top:2rem;">
+      <h2 style="color:#222;">🧩 App Block Setup Instructions</h2>
+      <ol>
+        <li>Go to your <strong>Theme</strong> in the Shopify admin.</li>
+        <li>Click on <strong>“Add section”</strong> or <strong>“Add block”</strong>.</li>
+        <li>In the <strong>Apps</strong> tab, look for blocks from <strong>“Oyoquid MoveResize-Experience”</strong>.</li>
+        <li>Add the desired block (e.g. <code>bloque-9 botón</code>, <code>bloque-7 slider3D</code>).</li>
+        <li>Once positioned, <strong>copy the X and Y coordinates</strong> and paste them in the app’s editable field.</li>
+      </ol>
+      <p><strong>Need help?</strong> See example below:</p>
+      <img src="tom.JPG" alt="App block instructions" style="width:100%; max-width:600px; border-radius:8px; margin-top:1rem;">
+    </section>
+    <section id="instructions-es" style="margin-top:2rem; display:none;">
+      <h2 style="color:#222;">🧩 Instrucciones de instalación de bloques</h2>
+      <ol>
+        <li>Ve a tu <strong>Tema</strong> desde el panel de Shopify.</li>
+        <li>Haz clic en <strong>“Agregar sección”</strong> o <strong>“Agregar bloque”</strong>.</li>
+        <li>En la pestaña <strong>Aplicaciones</strong>, busca bloques de <strong>“Oyoquid MoveResize-Experience”</strong>.</li>
+        <li>Añade el bloque que necesites (por ejemplo: <code>bloque-9 botón</code>, <code>bloque-7 slider3D</code>).</li>
+        <li>Una vez colocado, <strong>copia las coordenadas X e Y</strong> y pégalas en el campo editable.</li>
+      </ol>
+      <p><strong>¿Necesitas ayuda?</strong> Mira el ejemplo:</p>
+      <img src="tom.JPG" alt="Instrucciones visuales" style="width:100%; max-width:600px; border-radius:8px; margin-top:1rem;">
+    </section>
     <div id="policy-en">
       <section>
         <h2>Information We Collect</h2>
-        <p>When you install our app, we automatically access the following information from your Shopify store:</p>
         <ul>
           <li>Store name and email address</li>
           <li>Store owner contact information</li>
-          <li>Billing-related data necessary for app plan charges</li>
+          <li>Billing-related data for plan charges</li>
         </ul>
         <p><strong>We do not collect or store any customer data from your store.</strong></p>
       </section>
-
-      <div id="ver-mas-en">
-        <section><h2>How We Use Your Information</h2><p>We only use your information for:</p>
-          <ul><li>Identifying your store account</li><li>Charging you for the selected subscription plan</li><li>Providing customer support related to our app</li></ul>
-          <p>We do <strong>not</strong> share, sell, or use your information for marketing or any other unrelated purposes.</p></section>
-
-        <section><h2>Data Retention</h2><p>We retain only the information necessary to provide our services and for billing purposes. If you uninstall the app, we will delete any personal data associated with your store, unless we are legally required to retain it (e.g., for tax or billing records).</p></section>
-
-        <section><h2>Data Security</h2><p>We take appropriate security measures to protect your information against unauthorized access, alteration, disclosure, or destruction.</p></section>
-
-        <section><h2>Your Rights</h2><p>If you have questions about your data or want us to delete your information, please contact us at <a href="mailto:informaticaivorra@gmail.com">informaticaivorra@gmail.com</a>.</p></section>
-
-        <section><h2>Changes to This Policy</h2><p>We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated effective date.</p></section>
+      <div id="ver-mas-en" style="display:none;">
+        <section><h2>How We Use Your Information</h2>
+          <ul><li>Identifying your store account</li><li>Charging for the subscription</li><li>Providing customer support</li></ul>
+          <p>We do <strong>not</strong> share or sell your information.</p>
+        </section>
+        <section><h2>Data Retention</h2>
+          <p>We keep only necessary data; uninstalling deletes your personal data unless legally required.</p>
+        </section>
+        <section><h2>Data Security</h2>
+          <p>We protect your info against unauthorized access.</p>
+        </section>
+        <section><h2>Your Rights</h2>
+          <p>Contact <a href="mailto:informaticaivorra@gmail.com">informaticaivorra@gmail.com</a> to delete data.</p>
+        </section>
+        <section><h2>Changes to This Policy</h2>
+          <p>Updates will appear here with a new effective date.</p>
+        </section>
       </div>
-
       <button class="ver-mas-btn" id="btn-en" onclick="toggleContent('en')">Ver más</button>
     </div>
-
-    <!-- Spanish -->
     <div id="policy-es" style="display:none;">
       <section>
         <h2>Información que Recopilamos</h2>
-        <p>Cuando instalas nuestra aplicación, accedemos automáticamente a la siguiente información de tu tienda Shopify:</p>
         <ul>
-          <li>Nombre de la tienda y dirección de correo electrónico</li>
-          <li>Información de contacto del propietario de la tienda</li>
-          <li>Datos de facturación necesarios para los cargos del plan</li>
+          <li>Nombre de la tienda y correo electrónico</li>
+          <li>Información de contacto del propietario</li>
+          <li>Datos de facturación necesarios</li>
         </ul>
-        <p><strong>No recopilamos ni almacenamos ningún dato de cliente de tu tienda.</strong></p>
+        <p><strong>No recopilamos datos de clientes.</strong></p>
       </section>
-
-      <div id="ver-mas-es">
-        <section><h2>Cómo Usamos tu Información</h2><p>Usamos tu información solo para:</p>
-          <ul><li>Identificar tu cuenta de tienda</li><li>Cobrarte el plan de suscripción seleccionado</li><li>Brindar soporte relacionado con nuestra app</li></ul>
-          <p><strong>No</strong> compartimos, vendemos ni utilizamos tu información con fines publicitarios.</p></section>
-
-        <section><h2>Retención de Datos</h2><p>Solo conservamos la información necesaria para ofrecer nuestros servicios y facturación. Si desinstalas la app, eliminaremos los datos personales a menos que estemos obligados legalmente a conservarlos (ej. impuestos o facturas).</p></section>
-
-        <section><h2>Seguridad de Datos</h2><p>Tomamos medidas de seguridad apropiadas para proteger tu información contra el acceso, alteración o divulgación no autorizada.</p></section>
-
-        <section><h2>Tus Derechos</h2><p>Si tienes dudas sobre tus datos o deseas que los eliminemos, contáctanos a <a href="mailto:informaticaivorra@gmail.com">informaticaivorra@gmail.com</a>.</p></section>
-
-        <section><h2>Cambios en esta Política</h2><p>Podemos actualizar esta política de privacidad ocasionalmente. Cualquier cambio será publicado en esta página con la nueva fecha de vigencia.</p></section>
-      
+      <div id="ver-mas-es" style="display:none;">
+        <section><h2>Cómo Usamos tu Información</h2>
+          <ul><li>Identificar tu cuenta</li><li>Cobrar plan de suscripción</li><li>Brindar soporte</li></ul>
+          <p><strong>No</strong> vendemos tu información.</p>
+        </section>
+        <section><h2>Retención de Datos</h2>
+          <p>Conservamos solo lo necesario; al desinstalar eliminamos tus datos.</p>
+        </section>
+        <section><h2>Seguridad de Datos</h2>
+          <p>Protegemos tu información contra accesos no autorizados.</p>
+        </section>
+        <section><h2>Tus Derechos</h2>
+          <p>Contacta a <a href="mailto:informaticaivorra@gmail.com">informaticaivorra@gmail.com</a> para eliminar datos.</p>
+        </section>
+        <section><h2>Cambios en esta Política</h2>
+          <p>Verás las actualizaciones aquí con nueva fecha.</p>
+        </section>
       </div>
-
       <button class="ver-mas-btn" id="btn-es" onclick="toggleContent('es')">Ver más</button>
     </div>
-
-
   </main>
-
   <footer>
-    <p style="color:white;" class="contact">Contact: <a href="mailto:informaticaivorra@gmail.com">informaticaivorra@gmail.com</a></p>
-    <p style="color:white;"  class="app-name">App Name: Oyoquid</p>
-    
+    <p style="color:white;">Contact: <a href="mailto:informaticaivorra@gmail.com">informaticaivorra@gmail.com</a></p>
+    <p style="color:white;">App Name: Oyoquid</p>
   </footer>
-
-
- <a
-    id="pricing-plans-link"
-    href="#"
-    target="_top"
-    style="
-      display: block;
-      position: fixed;
-      bottom: 80px;
-      right: 20px;
-      padding: 12px 16px;
-      background-color: #f5a623;
-      color: #000;
-      text-decoration: none;
-      text-align: center;
-      border-radius: 50px;
-      font-weight: bold;
-      font-size: 0.9rem;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-      z-index: 999;
-    "
-  >
-    Pricing Plans
-  </a>
+  <a id="pricing-plans-link" href="#" target="_top" style="position:fixed;bottom:80px;right:20px;padding:12px 16px;background-color:#f5a623;color:#000;border-radius:50px;font-weight:bold;box-shadow:0 4px 8px rgba(0,0,0,0.2);text-align:center;text-decoration:none;z-index:999;">Pricing Plans</a>
   <script>
-    (function(){
-      var m = location.pathname.match(/^\/store\/([^\/]+)/),
-          q = new URLSearchParams(location.search).get('shop'),
-          shop = m ? m[1] : q ? q.replace('.myshopify.com','') : null;
-      if(!shop) return;
-      document.getElementById('pricing-plans-link').href =
-        'https://admin.shopify.com/store/' +
-        shop +
-        '/charges/app-section-experience/pricing_plans';
-    })();
-  </script>
-
-
-
-
-
-  <a class="whatsapp-button" href="https://wa.me/34606192518" target="_blank" aria-label="Soporte por WhatsApp">
-    <svg viewBox="0 0 32 32"><path d="M16.002 2.988c-7.304 0-13.208 5.727-13.208 12.796 0 2.258.628 4.462 1.82 6.398l-1.936 7.08 7.272-1.904c1.866 1.008 3.968 1.538 6.05 1.538h.002c7.304 0 13.208-5.726 13.208-12.796s-5.904-12.796-13.208-12.796zM16 27.34c-1.812 0-3.612-.49-5.184-1.418l-.372-.22-4.316 1.128 1.152-4.234-.24-.392c-1.106-1.798-1.69-3.858-1.69-5.92 0-6.14 5.202-11.14 11.6-11.14s11.6 5 11.6 11.14c0 6.142-5.202 11.14-11.6 11.14zm6.438-8.194c-.276-.138-1.638-.81-1.892-.902-.254-.092-.44-.138-.626.14-.186.276-.718.902-.88 1.086-.162.184-.324.208-.6.07-.276-.138-1.166-.43-2.22-1.37-.82-.728-1.372-1.626-1.532-1.902-.162-.276-.018-.426.122-.564.126-.124.276-.322.414-.482.138-.162.184-.276.276-.46.092-.184.046-.346-.022-.484-.07-.138-.626-1.514-.858-2.07-.226-.542-.454-.468-.626-.476-.162-.008-.348-.01-.534-.01s-.494.07-.752.346c-.258.276-.98.958-.98 2.336s1.004 2.712 1.144 2.898c.14.184 1.98 3.02 4.8 4.23.67.288 1.194.46 1.602.588.672.214 1.282.184 1.764.112.538-.08 1.638-.67 1.872-1.318.23-.648.23-1.202.162-1.318-.066-.116-.25-.184-.524-.322z"/></svg>
-    Soporte
-  </a>
-<br>
-  <script>
+    // Language toggle
     function toggleContent(lang) {
-      const verMas = document.getElementById(`ver-mas-${lang}`);
-      const btn = document.getElementById(`btn-${lang}`);
-      const isHidden = verMas.style.display === "none" || verMas.style.display === "";
-
-      verMas.style.display = isHidden ? "block" : "none";
-      btn.textContent = isHidden ? "Ver menos" : "Ver más";
-
-      if (isHidden) {
-        setTimeout(() => {
-          verMas.scrollIntoView({ behavior: "smooth", block: "start" });
-        }, 150);
-      }
+      const more = document.getElementById(`ver-mas-${lang}`);
+      const btn  = document.getElementById(`btn-${lang}`);
+      const hidden = more.style.display==='none' || !more.style.display;
+      more.style.display = hidden? 'block':'none';
+      btn.textContent = hidden? 'Ver menos':'Ver más';
+      if(hidden) setTimeout(()=> more.scrollIntoView({behavior:'smooth',block:'start'}),150);
     }
-
     function showLanguage(lang) {
-      const policyEn = document.getElementById("policy-en");
-      const policyEs = document.getElementById("policy-es");
-      const btnEn = document.getElementById("btn-lang-en");
-      const btnEs = document.getElementById("btn-lang-es");
-
-      if (lang === 'en') {
-        policyEn.style.display = "block";
-        policyEs.style.display = "none";
-        btnEn.classList.add("active-lang");
-        btnEs.classList.remove("active-lang");
-      } else {
-        policyEn.style.display = "none";
-        policyEs.style.display = "block";
-        btnEs.classList.add("active-lang");
-        btnEn.classList.remove("active-lang");
-      }
+      ['en','es'].forEach(l=>{
+        document.getElementById('policy-'+l).style.display = l===lang?'block':'none';
+        document.getElementById('instructions-'+l).style.display = l===lang?'block':'none';
+        document.getElementById('btn-lang-'+l).classList.toggle('active-lang', l===lang);
+      });
     }
-
-    // Slider de fondo
-    const backgroundImages = ['foto1.JPG', 'foto2.JPG']; 
-    let currentBg = 0;
-    const backgroundDiv = document.getElementById('background-slider');
-
-    function changeBackground() {
-      currentBg = (currentBg + 1) % backgroundImages.length;
-      backgroundDiv.style.backgroundImage = `url('${backgroundImages[currentBg]}')`;
-    }
-
-    backgroundDiv.style.backgroundImage = `url('${backgroundImages[0]}')`;
-    setInterval(changeBackground, 5000);
+    // Pricing link
+    (function(){
+      var m=location.pathname.match(/^\/store\/([^\/]+)/),q=new URLSearchParams(location.search).get('shop'),shop=m?m[1]:q?q.replace('.myshopify.com',''):null;
+      if(!shop) return;
+      document.getElementById('pricing-plans-link').href='https://admin.shopify.com/store/'+shop+'/charges/app-section-experience/pricing_plans';
+    })();
+    // Background slider
+    const bgImgs=['foto1.JPG','foto2.JPG'],bgDiv=document.getElementById('background-slider');let idx=0;
+    bgDiv.style.backgroundImage=`url('${bgImgs[0]}')`;setInterval(()=>{idx=(idx+1)%bgImgs.length;bgDiv.style.backgroundImage=`url('${bgImgs[idx]}')`;},5000);
   </script>
-
+  <a class="whatsapp-button" href="https://wa.me/34606192518" target="_blank" aria-label="Soporte por WhatsApp">
+    <svg viewBox="0 0 32 32"><path d="M16.002 2.988c-7.304 0-13.208 5.727-13.208 12.796 0 2.258.628 4.462 1.82 6.398l-1.936 7.08 7.272-1.904c1.866 1.008 3.968 1.538 6.05 1.538h.002c7.304 0 13.208-5.726 13.208-12.796s-5.904-12.796-13.208-12.796zM16 27.34c-1.812 0-3.612-.49-5.184-1.418l-.372-.22-4.316 1.128 1.152-4.234-.24-.392c-1.106-1.798-1.69-3.858-1.69-5.92 0-6.14 5.202-11.14 11.6-11.14s11.6 5 11.6 11.14c0 6.142-5.202 11.14-11.6 11.14zm6.438-8.194c-.276-.138-1.638-.81-1.892-.902-.254-.092-.44-.138-.626.14-.186.276-.718.902-.88 1.086-.162.184-.324.208-.6.07-.276-.138-1.166-.43-2.22-1.37-.82-.728-1.372-1.626-1.532-1.902-.162-.276-.018-.426.122-.564.126-.124.276-.322.414-.482.138-.162.184-.276.276-.46.092-.184.046-.346-.022-.484  
+"/></svg>Soporte
+  </a>
 </body>
 </html>
